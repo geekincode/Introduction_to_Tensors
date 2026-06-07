@@ -30,3 +30,4 @@
 
 .. math::
    \widetilde{\epsilon^1} = \widetilde{\epsilon^1}(\vec{e_1}) \epsilon^1 + \widetilde{\epsilon^1}(\vec{e_2}) \epsilon^2
+

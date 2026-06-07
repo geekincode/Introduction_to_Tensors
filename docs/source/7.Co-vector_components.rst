@@ -7,3 +7,102 @@
    | 但对偶向量的分量确实是依赖于坐标系的
 
 
+| 选取 :math:`V` 的两个基向量 :math:`\{ \vec{e_1}, \vec{e_2} \}` 
+| 引入 **两个特殊的余向量** :math:`\epsilon^1, \epsilon^2: V \rightarrow \mathbb{R}`
+
+- :math:`\epsilon^1(\vec{e_1}) = 1`   :math:`\epsilon^1(\vec{e_2}) = 0`
+- :math:`\epsilon^2(\vec{e_1}) = 0`   :math:`\epsilon^2(\vec{e_2}) = 1`
+
+| 上下标一样即为1，否则为0，
+| 所以引入(克罗内克)Kronecker delta符号 :math:`\delta_{ij}` 来表示：
+
+.. math::
+
+   \epsilon^i(\vec{e_j}) = \delta_{ij} = \begin{cases} 1 & \text{if } i = j \\ 0 & \text{if } i \neq j \end{cases}
+
+作用于一般向量 :math:`\textcolor{orange}{\vec{v}} = v^1 \vec{e_1} + v^2 \vec{e_2}` 上：
+
+.. math::
+
+   \epsilon^1(\textcolor{orange}{\vec{v}}) = \epsilon^1(v^1 \vec{e_1} + v^2 \vec{e_2}) = v^1 \epsilon^1(\vec{e_1}) + v^2 \epsilon^1(\vec{e_2}) = v^1
+
+.. math::
+
+   \epsilon^2(\textcolor{orange}{\vec{v}}) = \epsilon^2(v^1 \vec{e_1} + v^2 \vec{e_2}) = v^1 \epsilon^2(\vec{e_1}) + v^2 \epsilon^2(\vec{e_2}) = v^2
+
+所以
+
+.. math::
+
+   \epsilon^i(\textcolor{orange}{\vec{v}}) = v^i
+
+余向量 :math:`\epsilon` 的几何直观形态
+
+.. image:: images/P7/7-1.png
+   :scale: 50 %
+   :alt: ε的几何直观形态
+   :align: center
+
+.. math::
+
+   \alpha = \alpha_1 \textcolor{purple}{\epsilon^1} + \alpha_2 \textcolor{purple}{\epsilon^2}
+
+.. grid:: 2
+
+   .. grid-item-card:: 向量展开
+      :class-header: bg-primary text-white
+
+      .. math::
+
+         \vec{v} = v^i \vec{e_i}
+
+      - 基向量 :math:`\vec{e_i}` 在下标
+      - 分量 :math:`v^i` 在上标（逆变）
+
+   .. grid-item-card:: 对偶向量展开
+      :class-header: bg-success text-white
+
+      .. math::
+
+         \alpha = \alpha_i \epsilon^i
+
+      - 对偶基 :math:`\epsilon^i` 在上标
+      - 分量 :math:`\alpha_i` 在下标（协变）
+
+
+对偶向量展开可视化
+
+.. image:: images/P7/7-2.png
+   :scale: 50 %
+   :alt: 对偶向量展开可视化
+   :align: center
+
+将任意余向量表示为对偶基的线性组合
+
+.. image:: images/P7/7-3.png
+   :scale: 50 %
+   :alt: 对偶基的线性组合
+   :align: center
+   
+推广到一般情况
+
+.. image:: images/P7/7-4.png
+   :scale: 50 %
+   :alt: 推广到一般情况
+   :align: center
+   
+| 指定一个旧余向量 :math:`\alpha = 2\epsilon^1 + 1\epsilon^2` 
+| 如图为新旧对偶基
+
+.. image:: images/P7/7-5.png
+   :scale: 50 %
+   :alt: 对偶基的线性组合
+   :align: center
+
+| 前向矩阵 :math:`F` 将其从旧基变换到新基
+| 后向矩阵 :math:`B` 将其从新基变换到旧基
+
+.. image:: images/P7/7-6.png
+   :scale: 50 %
+   :alt: 基的变换矩阵
+   :align: center
