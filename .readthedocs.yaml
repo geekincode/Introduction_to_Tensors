@@ -11,3 +11,10 @@ python:
 
 sphinx:
   configuration: docs/source/conf.py
+
+
+# 启用格式
+formats:
+  - htmlzip
+  - pdf
+  - epub
