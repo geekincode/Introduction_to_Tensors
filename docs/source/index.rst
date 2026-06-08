@@ -25,6 +25,7 @@ Contents
    8.Co-vector_transformation_rules
    9.Linear_maps
    10.Linear_maps_transformation_rules
+   11.The_metric_tensor
    Index_Table
    sphinx-design
 
