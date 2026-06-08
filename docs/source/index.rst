@@ -27,6 +27,7 @@ Contents
    10.Linear_maps_transformation_rules
    11.The_metric_tensor
    12.Bilinear_forms
+   13.A_linear_mapping_is_a_vector-covariant_pair
    Index_Table
    sphinx-design
 
